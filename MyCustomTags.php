@@ -8,6 +8,7 @@ declare(strict_types=1);
 
 namespace MyCustomTags;
 
+use Fisharebest\Webtrees\Contracts\ElementInterface;
 use Fisharebest\Webtrees\Elements\CustomElement;
 use Fisharebest\Webtrees\Elements\XrefSource;
 use Fisharebest\Webtrees\I18N;
