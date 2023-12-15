@@ -6,8 +6,9 @@
 
 declare(strict_types=1);
 
-namespace MyCustomTags;
+namespace Jefferson49\Webtrees\Module\MyCustomTags;
 
 require __DIR__ . '/MyCustomTags.php';
+require __DIR__ . '/EventType.php';
 
 return new MyCustomTags();

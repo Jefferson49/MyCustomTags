@@ -6,7 +6,7 @@
 
 declare(strict_types=1);
 
-namespace MyCustomTags;
+namespace Jefferson49\Webtrees\Module\MyCustomTags;
 
 use Fisharebest\Webtrees\Contracts\ElementInterface;
 use Fisharebest\Webtrees\Elements\CustomElement;
@@ -77,7 +77,8 @@ class MyCustomTags extends AbstractModule implements ModuleCustomInterface
         return [
            'INDI:BIRT:_GODP' => new CustomElement(I18N::translate('Godparent')),
 		   'INDI:_TODO:SOUR' => new XrefSource(I18N::translate('Source citation')),	   
-           'FAM:_TODO:SOUR' => new XrefSource(I18N::translate('Source citation')),
+           'FAM:_TODO:SOUR'  => new XrefSource(I18N::translate('Source citation')),
+           'INDI:EVEN:TYPE'  => new EventType(I18N::translate('Type of event')),
         ];
     }
 
@@ -87,9 +88,9 @@ class MyCustomTags extends AbstractModule implements ModuleCustomInterface
     protected function customSubTags(): array
     {
         return [
-            'INDI:BIRT' => [['_GODP', '0:1']],
-			'INDI:_TODO' => [['SOUR', '0:M']],
-            'FAM:_TODO' => [['SOUR', '0:M']],
+            'INDI:BIRT'  => [['_GODP', '0:1']],
+			'INDI:_TODO' => [['SOUR',  '0:M']],
+            'FAM:_TODO'  => [['SOUR',  '0:M']],
         ];
     }
 }
