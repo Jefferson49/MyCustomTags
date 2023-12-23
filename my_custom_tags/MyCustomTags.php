@@ -8,6 +8,7 @@ declare(strict_types=1);
 
 namespace Jefferson49\Webtrees\Module\MyCustomTags;
 
+use Fisharebest\Localization\Translation;
 use Fisharebest\Webtrees\Contracts\ElementInterface;
 use Fisharebest\Webtrees\Elements\CustomElement;
 use Fisharebest\Webtrees\Elements\XrefSource;
@@ -46,7 +47,7 @@ class MyCustomTags extends AbstractModule implements ModuleCustomInterface
      */
     public function description(): string
     {
-        return I18N::translate('This module provides custom tags');
+        return I18N::translate('This module provides custom tags and also custom types for certain tags');
     }
 
     /**
@@ -57,6 +58,38 @@ class MyCustomTags extends AbstractModule implements ModuleCustomInterface
     public function customModuleAuthorName(): string
     {
         return 'Markus Hemprich';
+    }
+
+    /**
+     * {@inheritDoc}
+     *
+     * @return string
+     *
+     * @see \Fisharebest\Webtrees\Module\AbstractModule::resourcesFolder()
+     */
+    public function resourcesFolder(): string
+    {
+        return __DIR__ . '/resources/';
+    }
+
+    /**
+     * {@inheritDoc}
+     *
+     * @param string $language
+     *
+     * @return array
+     *
+     * @see \Fisharebest\Webtrees\Module\ModuleCustomInterface::customTranslations()
+     */
+    public function customTranslations(string $language): array
+    {
+        $lang_dir   = $this->resourcesFolder() . 'lang/';
+        $file       = $lang_dir . $language . '.mo';
+        if (file_exists($file)) {
+            return (new Translation($file))->asArray();
+        } else {
+            return [];
+        }
     }
 
     /**
