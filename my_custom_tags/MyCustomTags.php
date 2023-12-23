@@ -78,6 +78,7 @@ class MyCustomTags extends AbstractModule implements ModuleCustomInterface
            'INDI:BIRT:_GODP' => new CustomElement(I18N::translate('Godparent')),
 		   'INDI:_TODO:SOUR' => new XrefSource(I18N::translate('Source citation')),	   
            'FAM:_TODO:SOUR'  => new XrefSource(I18N::translate('Source citation')),
+           'INDI:EDUC:TYPE'  => new EducationType(I18N::translate('Type of education')),
            'INDI:EVEN:TYPE'  => new EventType(I18N::translate('Type of event')),
            'INDI:FACT:TYPE'  => new FactType(I18N::translate('Type of fact')),
         ];

@@ -48,12 +48,12 @@ class FactType extends AbstractElement
     {
         return [
             ''                          => '',
-           'Militärdienst'              => 'Militärdienst',
-           'Hitlerjugend'               => 'Hitlerjugend',
            'Buchveröffentlichung'       => 'Buchveröffentlichung',
-           'Gefängnisaufenthalt'        => 'Gefängnisaufenthalt',
            'Burschenschaft'             => 'Burschenschaft',
+           'Gefängnisaufenthalt'        => 'Gefängnisaufenthalt',
            'Haftstrafe'                 => 'Haftstrafe',
+           'Hitlerjugend'               => 'Hitlerjugend',
+           'Militärdienst'              => 'Militärdienst',
         ];
     }
 }
