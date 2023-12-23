@@ -25,7 +25,7 @@ use Fisharebest\Webtrees\Elements\AbstractElement;
  * Event custom types
  */
 
-class EventType extends AbstractElement
+class ConfirmationType extends AbstractElement
 {
     /**
      * Convert a value to a canonical form.
@@ -48,13 +48,8 @@ class EventType extends AbstractElement
     {
         return [
             ''                          => '',
-            'Einweihung'                => 'Einweihung',
-            'Ehrung'                    => 'Ehrung',
-            'Gerichtsverhandlung'       => 'Gerichtsverhandlung',
-            'Jubiläum'                  => 'Jubiläum',
-            'Kirchenaustritt'           => 'Kirchenaustritt',
-            'Kircheneintritt'           => 'Kircheneintritt',
-            'Treffen'                   => 'Treffen',
+            'Firmung'                   => 'Firmung',
+            'Konfirmation'              => 'Konfirmation',
         ];
     }
 }

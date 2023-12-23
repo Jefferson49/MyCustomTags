@@ -78,10 +78,12 @@ class MyCustomTags extends AbstractModule implements ModuleCustomInterface
            'INDI:BIRT:_GODP' => new CustomElement(I18N::translate('Godparent')),
 		   'INDI:_TODO:SOUR' => new XrefSource(I18N::translate('Source citation')),	   
            'FAM:_TODO:SOUR'  => new XrefSource(I18N::translate('Source citation')),
+           'INDI:CONF:TYPE'  => new ConfirmationType(I18N::translate('Type of confirmation')),
            'INDI:EDUC:TYPE'  => new EducationType(I18N::translate('Type of education')),
            'INDI:EVEN:TYPE'  => new EventType(I18N::translate('Type of event')),
            'INDI:FACT:TYPE'  => new FactType(I18N::translate('Type of fact')),
            'INDI:GRAD:TYPE'  => new GraduationType(I18N::translate('Type of graduation')),
+           'INDI:ORDN:TYPE'  => new OrdinationType(I18N::translate('Type of ordination')),
         ];
     }
 
