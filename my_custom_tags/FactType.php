@@ -25,7 +25,7 @@ use Fisharebest\Webtrees\Elements\AbstractElement;
  * Event custom types
  */
 
-class EventType extends AbstractElement
+class FactType extends AbstractElement
 {
     /**
      * Convert a value to a canonical form.
@@ -48,9 +48,12 @@ class EventType extends AbstractElement
     {
         return [
             ''                          => '',
-            'Kirchenaustritt'           => 'Kirchenaustritt',
-            'Kircheneintritt'           => 'Kircheneintritt',
-            'Gerichtsverhandlung'       => 'Gerichtsverhandlung',
+           'Militärdienst'              => 'Militärdienst',
+           'Hitlerjugend'               => 'Hitlerjugend',
+           'Buchveröffentlichung'       => 'Buchveröffentlichung',
+           'Gefängnisaufenthalt'        => 'Gefängnisaufenthalt',
+           'Burschenschaft'             => 'Burschenschaft',
+           'Haftstrafe'                 => 'Haftstrafe',
         ];
     }
 }
