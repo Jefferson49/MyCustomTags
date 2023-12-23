@@ -81,6 +81,7 @@ class MyCustomTags extends AbstractModule implements ModuleCustomInterface
            'INDI:EDUC:TYPE'  => new EducationType(I18N::translate('Type of education')),
            'INDI:EVEN:TYPE'  => new EventType(I18N::translate('Type of event')),
            'INDI:FACT:TYPE'  => new FactType(I18N::translate('Type of fact')),
+           'INDI:GRAD:TYPE'  => new GraduationType(I18N::translate('Type of graduation')),
         ];
     }
 
