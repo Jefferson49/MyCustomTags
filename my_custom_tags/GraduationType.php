@@ -28,18 +28,6 @@ use Fisharebest\Webtrees\Elements\AbstractElement;
 class GraduationType extends AbstractElement
 {
     /**
-     * Convert a value to a canonical form.
-     *
-     * @param string $value
-     *
-     * @return string
-     */
-    public function canonical(string $value): string
-    {
-        return parent::canonical($value);
-    }
-
-    /**
      * A list of controlled values for this element
      *
      * @return array<int|string,string>

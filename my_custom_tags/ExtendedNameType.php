@@ -19,13 +19,14 @@ declare(strict_types=1);
 
 namespace Jefferson49\Webtrees\Module\MyCustomTags;
 
-use Fisharebest\Webtrees\Elements\AbstractElement;
+use Fisharebest\Webtrees\Elements\NameType;
+use Fisharebest\Webtrees\I18N;
 
 /**
  * Event custom types
  */
 
-class FactType extends AbstractElement
+class ExtendedNameType extends NameType
 {
     /**
      * A list of controlled values for this element
@@ -34,14 +35,17 @@ class FactType extends AbstractElement
      */
     public function values(): array
     {
-        return [
-            ''                          => '',
-           'Buchveröffentlichung'       => 'Buchveröffentlichung',
-           'Burschenschaft'             => 'Burschenschaft',
-           'Gefängnisaufenthalt'        => 'Gefängnisaufenthalt',
-           'Haftstrafe'                 => 'Haftstrafe',
-           'Hitlerjugend'               => 'Hitlerjugend',
-           'Militärdienst'              => 'Militärdienst',
+        $extended_values = [
+            'Deutsch'                       => 'Deutsch',
+            'Eingedeutscht'                 => 'Eingedeutscht',
+            'Name nach Heirat der Eltern'   => 'Name nach Heirat der Eltern',
+            'Ordensname'                    => 'Ordensname',
         ];
+
+        $values = array_merge(parent::values(), $extended_values);
+
+        uasort($values, I18N::comparator());
+
+        return $values;
     }
 }
