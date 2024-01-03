@@ -45,21 +45,36 @@ class MyCustomTags extends AbstractModule implements ModuleCustomInterface
     // For every module interface that is implemented, the corresponding trait *should* also use be used.
     use ModuleCustomTrait;
 
+    //Custom module version
+    public const CUSTOM_VERSION = '1.0.0';
+
+    //Author
+    public const CUSTOM_AUTHOR = 'Markus Hemprich';
+
+    //Github repository
+    public const GITHUB_REPO = 'Jefferson49/MyCustomTags';
+
+
     /**
      * How should this module be identified in the control panel, etc.?
+     * {@inheritDoc}
      *
      * @return string
-     */
-    public function title(): string
+     *
+     * @see \Fisharebest\Webtrees\Module\AbstractModule::title()
+     */    public function title(): string
     {
         return I18N::translate('My Custom Tags');
     }
 
     /**
      * A sentence describing what this module does.
+     * {@inheritDoc}
      *
      * @return string
-     */
+     *
+     * @see \Fisharebest\Webtrees\Module\AbstractModule::description()
+     */    
     public function description(): string
     {
         return I18N::translate('A module to provide custom tags, types, relationship descriptors, and roles in events');
@@ -67,15 +82,19 @@ class MyCustomTags extends AbstractModule implements ModuleCustomInterface
 
     /**
      * The person or organisation who created this module.
+     * {@inheritDoc}
      *
      * @return string
+     *
+     * @see \Fisharebest\Webtrees\Module\ModuleCustomInterface::customModuleAuthorName()
      */
     public function customModuleAuthorName(): string
     {
-        return 'Markus Hemprich';
+        return self::CUSTOM_AUTHOR;
     }
 
     /**
+     * The folder for the module ressources
      * {@inheritDoc}
      *
      * @return string
@@ -87,6 +106,30 @@ class MyCustomTags extends AbstractModule implements ModuleCustomInterface
         return __DIR__ . '/resources/';
     }
 
+    /**
+     * {@inheritDoc}
+     *
+     * @return string
+     *
+     * @see \Fisharebest\Webtrees\Module\ModuleCustomInterface::customModuleVersion()
+     */
+    public function customModuleVersion(): string
+    {
+        return self::CUSTOM_VERSION;
+    }
+
+    /**
+     * {@inheritDoc}
+     *
+     * @return string
+     *
+     * @see \Fisharebest\Webtrees\Module\ModuleCustomInterface::customModuleSupportUrl()
+     */
+    public function customModuleSupportUrl(): string
+    {
+        return 'https://github.com/' . self::GITHUB_REPO;
+    }
+    
     /**
      * {@inheritDoc}
      *
