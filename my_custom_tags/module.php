@@ -22,7 +22,7 @@
  */
 
 /**
- * Module to provide custom tags, custom types, custom relationship descriptors, and custom roles in events
+ * A webtrees custom module to provide custom tags, custom types, custom relationship descriptors, and custom roles in events
  */
 
 declare(strict_types=1);
