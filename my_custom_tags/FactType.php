@@ -26,6 +26,7 @@ declare(strict_types=1);
 namespace Jefferson49\Webtrees\Module\MyCustomTags;
 
 use Fisharebest\Webtrees\Elements\AbstractElement;
+use Fisharebest\Webtrees\I18N;
 
 /**
  * Custom types for facts (INDI:FACT:TYPE)
