@@ -2,7 +2,13 @@
 
 /**
  * webtrees: online genealogy
- * Copyright (C) 2023 webtrees development team
+ * Copyright (C) 2024 webtrees development team
+ *                    <http://webtrees.net>
+ *
+ * MyCustomTags (webtrees custom module):
+ * Copyright (C) 2024 Markus Hemprich
+ *                    <http://www.familienforschung-hemprich.de>
+ *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
@@ -23,7 +29,7 @@ use Fisharebest\Webtrees\Elements\RoleInEvent;
 use Fisharebest\Webtrees\I18N;
 
 /**
- * Event custom types
+ * Additional custom roles in events (*:*:EVEN:ROLE)
  */
 
 class ExtendedRoleInEvent extends RoleInEvent
@@ -36,7 +42,8 @@ class ExtendedRoleInEvent extends RoleInEvent
     public function values(): array
     {
         $extended_values = [
-            '(Godparent)'       => 'Pate/Patin',
+            //Value in GEDCOM           => Value shown in webtrees frontend
+            '(Godparent)'               => 'Pate/Patin',
         ];
 
         $values = array_merge(parent::values(), $extended_values);

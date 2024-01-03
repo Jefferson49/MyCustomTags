@@ -2,7 +2,13 @@
 
 /**
  * webtrees: online genealogy
- * Copyright (C) 2023 webtrees development team
+ * Copyright (C) 2024 webtrees development team
+ *                    <http://webtrees.net>
+ *
+ * MyCustomTags (webtrees custom module):
+ * Copyright (C) 2024 Markus Hemprich
+ *                    <http://www.familienforschung-hemprich.de>
+ *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
@@ -22,7 +28,7 @@ namespace Jefferson49\Webtrees\Module\MyCustomTags;
 use Fisharebest\Webtrees\Elements\AbstractElement;
 
 /**
- * Event custom types
+ * Custom types for eductation (INDI:EDUC:TYPE)
  */
 
 class EducationType extends AbstractElement
@@ -35,6 +41,7 @@ class EducationType extends AbstractElement
     public function values(): array
     {
         return [
+            //Value in GEDCOM                  => Value shown in webtrees frontend
             ''                                 => '',
             'Berufsausbildung'                 => 'Berufsausbildung',
             'Berufskolleg'                     => 'Berufskolleg',
