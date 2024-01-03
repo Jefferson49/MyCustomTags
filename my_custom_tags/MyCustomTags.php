@@ -62,7 +62,7 @@ class MyCustomTags extends AbstractModule implements ModuleCustomInterface
      */
     public function description(): string
     {
-        return I18N::translate('This module provides custom tags and also custom types for certain tags');
+        return I18N::translate('A module to provide custom tags, types, relationship descriptors, and roles in events');
     }
 
     /**

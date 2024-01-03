@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: My custom tags\n"
-"POT-Creation-Date: 2023-12-23 15:09+0100\n"
+"POT-Creation-Date: 2024-01-03 05:38+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -19,8 +19,12 @@ msgstr ""
 msgid "My Custom Tags"
 msgstr ""
 
-msgid "This module provides custom tags and also custom types for certain tags"
+msgid ""
+"A module to provide custom tags, types, relationship descriptors, and roles "
+"in events"
 msgstr ""
+"Ein Modul zur Bereitstellung von benutzerspezifischen Tags, Typen, "
+"Beschreibungen von Beziehungen und Rollen in Ereignissen."
 
 msgid "Godparent"
 msgstr ""
@@ -35,13 +39,22 @@ msgid "Type of education"
 msgstr "Art der Ausbildung"
 
 msgid "Type of event"
-msgstr ""
+msgstr "Art des Ereignisses"
 
 msgid "Type of fact"
-msgstr ""
+msgstr "Art der Tatsache"
 
 msgid "Type of graduation"
 msgstr "Art des Bildungsabschlusses"
 
+msgid "Type of name"
+msgstr "Art des Namens"
+
 msgid "Type of ordination"
 msgstr "Art der Ordination"
+
+msgid "Relationship"
+msgstr ""
+
+msgid "Role"
+msgstr ""
