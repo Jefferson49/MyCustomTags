@@ -1,0 +1,60 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: My custom tags\n"
+"POT-Creation-Date: 2024-01-03 05:38+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: TheDutchJewel <thedutchjewel@gmail.com>\n"
+"Language-Team: \n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.2\n"
+"X-Poedit-Basepath: ../..\n"
+"X-Poedit-KeywordsList: translate\n"
+"X-Poedit-Flags-xgettext: --no-location\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+
+msgid "My Custom Tags"
+msgstr ""
+
+msgid ""
+"A module to provide custom tags, types, relationship descriptors, and roles "
+"in events"
+msgstr ""
+"Een module om aangepaste labels, soorten, relatiebeschrijvingen en rollen "
+"in gebeurtenissen te bieden"
+
+msgid "Godparent"
+msgstr "Peetouder"
+
+msgid "Source citation"
+msgstr "Bronvermelding"
+
+msgid "Type of confirmation"
+msgstr "Soort belijdenissen/confirmaties"
+
+msgid "Type of education"
+msgstr "Soort opleiding"
+
+msgid "Type of event"
+msgstr "Soort gebeurtenis"
+
+msgid "Type of fact"
+msgstr "Soort feit"
+
+msgid "Type of graduation"
+msgstr "Soort diploma"
+
+msgid "Type of name"
+msgstr "Soort naam"
+
+msgid "Type of ordination"
+msgstr "Soort wijding"
+
+msgid "Relationship"
+msgstr "Verwantschap"
+
+msgid "Role"
+msgstr "Rol"
