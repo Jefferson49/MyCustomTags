@@ -169,37 +169,41 @@ class MyCustomTags extends AbstractModule implements ModuleCustomInterface
     {
         return [
             //Additonal custom tags
-            'INDI:BIRT:_GODP'             => new CustomElement(I18N::translate('Godparent')),
-		    'INDI:_TODO:SOUR'             => new XrefSource(I18N::translate('Source citation')),	   
-            'FAM:_TODO:SOUR'              => new XrefSource(I18N::translate('Source citation')),
+            'INDI:BIRT:_GODP'               => new CustomElement(I18N::translate('Godparent')),
+		    'INDI:_TODO:SOUR'               => new XrefSource(I18N::translate('Source citation')),	   
+            'FAM:_TODO:SOUR'                => new XrefSource(I18N::translate('Source citation')),
 
-            //Additional types
-            'INDI:CONF:TYPE'              => new ConfirmationType(I18N::translate('Type of confirmation')),
-            'INDI:EDUC:TYPE'              => new EducationType(I18N::translate('Type of education')),
-            'INDI:EVEN:TYPE'              => new EventType(I18N::translate('Type of event')),
-            'INDI:FACT:TYPE'              => new FactType(I18N::translate('Type of fact')),
-            'INDI:GRAD:TYPE'              => new GraduationType(I18N::translate('Type of graduation')),
-            'INDI:NAME:TYPE'              => new ExtendedNameType(I18N::translate('Type of name')),
-            'INDI:ORDN:TYPE'              => new OrdinationType(I18N::translate('Type of ordination')),
+            //Additional INDI types
+            'INDI:CONF:TYPE'                => new ConfirmationType(I18N::translate('Type of confirmation')),
+            'INDI:EDUC:TYPE'                => new EducationType(I18N::translate('Type of education')),
+            'INDI:EVEN:TYPE'                => new EventType(I18N::translate('Type of event')),
+            'INDI:FACT:TYPE'                => new FactType(I18N::translate('Type of fact')),
+            'INDI:GRAD:TYPE'                => new GraduationType(I18N::translate('Type of graduation')),
+            'INDI:NAME:TYPE'                => new ExtendedNameType(I18N::translate('Type of name')),
+            'INDI:ORDN:TYPE'                => new OrdinationType(I18N::translate('Type of ordination')),
+
+            //Additional FAM types
+            'FAM:MARR:TYPE'                 => new ExtendedMarriageType(I18N::translate('Type of marriage')),
+            'FAM:EVEN:TYPE'                 => new EventType(I18N::translate('Type of event')),
 
             //Additional descriptors for relationships
-            'FAM:_ASSO:RELA'              => new ExtendedRelationIsDescriptor(I18N::translate('Relationship')),
-            'FAM:*:_ASSO:RELA'            => new ExtendedRelationIsDescriptor(I18N::translate('Relationship')),
-            'INDI:ASSO:RELA'              => new ExtendedRelationIsDescriptor(I18N::translate('Relationship')),
-            'INDI:*:_ASSO:RELA'           => new ExtendedRelationIsDescriptor(I18N::translate('Relationship')),
+            'FAM:_ASSO:RELA'                => new ExtendedRelationIsDescriptor(I18N::translate('Relationship')),
+            'FAM:*:_ASSO:RELA'              => new ExtendedRelationIsDescriptor(I18N::translate('Relationship')),
+            'INDI:ASSO:RELA'                => new ExtendedRelationIsDescriptor(I18N::translate('Relationship')),
+            'INDI:*:_ASSO:RELA'             => new ExtendedRelationIsDescriptor(I18N::translate('Relationship')),
 
             //Additional roles in events
-            'FAM:*:SOUR:EVEN:ROLE'        => new ExtendedRoleInEvent(I18N::translate('Role')),
-            'FAM:SOUR:EVEN:ROLE'          => new ExtendedRoleInEvent(I18N::translate('Role')),
-            'INDI:*:SOUR:EVEN:ROLE'       => new ExtendedRoleInEvent(I18N::translate('Role')),
-            'INDI:NAME:*:SOUR:EVEN:ROLE'  => new ExtendedRoleInEvent(I18N::translate('Role')),
-            'INDI:SOUR:EVEN:ROLE'         => new ExtendedRoleInEvent(I18N::translate('Role')),
-            'NOTE:SOUR:EVEN:ROLE'         => new ExtendedRoleInEvent(I18N::translate('Role')),
-            'OBJE:SOUR:EVEN:ROLE'         => new ExtendedRoleInEvent(I18N::translate('Role')),
-            'FAM:*:_ASSO:SOUR:EVEN:ROLE'  => new ExtendedRoleInEvent(I18N::translate('Role')),
-            'INDI:*:_ASSO:SOUR:EVEN:ROLE' => new ExtendedRoleInEvent(I18N::translate('Role')),        
-            '_LOC:SOUR:EVEN:ROLE'         => new ExtendedRoleInEvent(I18N::translate('Role')),
-            '_LOC:*:SOUR:EVEN:ROLE'       => new ExtendedRoleInEvent(I18N::translate('Role')),
+            'FAM:*:SOUR:EVEN:ROLE'          => new ExtendedRoleInEvent(I18N::translate('Role')),
+            'FAM:SOUR:EVEN:ROLE'            => new ExtendedRoleInEvent(I18N::translate('Role')),
+            'INDI:*:SOUR:EVEN:ROLE'         => new ExtendedRoleInEvent(I18N::translate('Role')),
+            'INDI:NAME:*:SOUR:EVEN:ROLE'    => new ExtendedRoleInEvent(I18N::translate('Role')),
+            'INDI:SOUR:EVEN:ROLE'           => new ExtendedRoleInEvent(I18N::translate('Role')),
+            'NOTE:SOUR:EVEN:ROLE'           => new ExtendedRoleInEvent(I18N::translate('Role')),
+            'OBJE:SOUR:EVEN:ROLE'           => new ExtendedRoleInEvent(I18N::translate('Role')),
+            'FAM:*:_ASSO:SOUR:EVEN:ROLE'    => new ExtendedRoleInEvent(I18N::translate('Role')),
+            'INDI:*:_ASSO:SOUR:EVEN:ROLE'   => new ExtendedRoleInEvent(I18N::translate('Role')),        
+            '_LOC:SOUR:EVEN:ROLE'           => new ExtendedRoleInEvent(I18N::translate('Role')),
+            '_LOC:*:SOUR:EVEN:ROLE'         => new ExtendedRoleInEvent(I18N::translate('Role')),
         ];
     }
 
