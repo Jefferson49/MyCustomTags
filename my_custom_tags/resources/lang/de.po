@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: My custom tags\n"
-"POT-Creation-Date: 2024-01-03 05:38+0100\n"
+"POT-Creation-Date: 2024-07-10 07:15+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -9,12 +9,36 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.4.2\n"
+"X-Generator: Poedit 3.4.4\n"
 "X-Poedit-Basepath: ../..\n"
 "X-Poedit-KeywordsList: translate\n"
 "X-Poedit-Flags-xgettext: --no-location\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: .\n"
+
+msgid "Clergy"
+msgstr "Kleriker"
+
+msgid "Friend"
+msgstr ""
+
+msgid "Godparent"
+msgstr ""
+
+msgid "Multiple"
+msgstr "Mehrere"
+
+msgid "Neighbor"
+msgstr "Nachbar"
+
+msgid "Officiator"
+msgstr "Amtierender Beamter"
+
+msgid "Parent"
+msgstr "Elternteil"
+
+msgid "Witness"
+msgstr ""
 
 msgid "My Custom Tags"
 msgstr ""
@@ -25,9 +49,6 @@ msgid ""
 msgstr ""
 "Ein Modul zur Bereitstellung von benutzerspezifischen Tags, Typen, "
 "Beschreibungen von Beziehungen und Rollen in Ereignissen."
-
-msgid "Godparent"
-msgstr ""
 
 msgid "Source citation"
 msgstr ""
@@ -52,6 +73,9 @@ msgstr "Art des Namens"
 
 msgid "Type of ordination"
 msgstr "Art der Ordination"
+
+msgid "Type of marriage"
+msgstr ""
 
 msgid "Relationship"
 msgstr ""

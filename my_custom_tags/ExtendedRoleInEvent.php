@@ -43,7 +43,14 @@ class ExtendedRoleInEvent extends RoleInEvent
     {
         $extended_values = [
             //Value in GEDCOM           => Value shown in webtrees frontend
-            '(Godparent)'               => 'Pate/Patin',
+            '(Clergy)'                  => I18N::translate('Clergy'),
+            '(Friend)'                  => I18N::translate('Friend'),
+            '(Godparent)'               => I18N::translate('Godparent'),
+            '(Multiple)'                => I18N::translate('Multiple'),
+            '(Neighbor)'                => I18N::translate('Neighbor'),
+            '(Officiator)'              => I18N::translate('Officiator'),
+            '(Parent)'                  => I18N::translate('Parent'),
+            '(Witness)'                 => I18N::translate('Witness'),
         ];
 
         $values = array_merge(parent::values(), $extended_values);
