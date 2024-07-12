@@ -59,22 +59,4 @@ class ExtendedRoleInEvent extends RoleInEvent
 
         return $values;
     }
-
-    /**
-     * Convert a value to a canonical form.
-     *
-     * @param string $value
-     *
-     * @return string
-     */
-    public function canonical(string $value): string
-    {
-        if (in_array($value, parent::values())) {
-
-            return parent::canonical($value);
-        }
-
-        //Do not convert to upperstring!
-        return $value;
-    }    
 }
