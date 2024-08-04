@@ -65,7 +65,7 @@ class ExtendedNameType extends NameType
      */
     public function canonical(string $value): string
     {
-        if (in_array($value, parent::values())) {
+        if (array_key_exists(strtoupper($value), parent::values())) {
 
             return parent::canonical($value);
         }

@@ -61,12 +61,12 @@ class ExtendedMarriageType extends MarriageType
      */
     public function canonical(string $value): string
     {
-        if (in_array($value, parent::values()) OR $value === 'RELI') {
+        if (array_key_exists(strtoupper($value), parent::values()) OR $value === 'RELI') {
 
             return parent::canonical($value);
         }
  
-        //Do not convert to upperstring!
+        //Otherwise do not convert to upperstring!
         return $value;
     }    
 }
