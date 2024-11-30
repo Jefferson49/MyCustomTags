@@ -1,5 +1,8 @@
+[![webtrees major version](https://img.shields.io/badge/webtrees-v2.1.x-green)](https://webtrees.net/download)
+[![webtrees major version](https://img.shields.io/badge/webtrees-v2.2.x-green)](https://webtrees.net/download)
+
 ## My Custom Tags
-A [weebtrees](https://webtrees.net) 2.1 custom module to provide custom tags, custom types, custom relationship descriptors, and custom roles in events.
+A [weebtrees](https://webtrees.net) 2.1/2.2 custom module to provide custom tags, custom types, custom relationship descriptors, and custom roles in events.
 
 ## What are the benefits of this module?
 + Provide additional GEDCOM custom tags to be used in webtrees
@@ -34,7 +37,7 @@ A [weebtrees](https://webtrees.net) 2.1 custom module to provide custom tags, cu
     + Modifiy the [function values() in ExtendedRoleInEvent.php](my_custom_tags/ExtendedRoleInEvent.php#L45), //Value in GEDCOM  => Value shown in webtrees frontend
 
 ## Webtrees version
-The latest release of the module was developed and tested with [webtrees 2.1.18](https://webtrees.net/download), but should also run with any other webtrees 2.1 version.
+The latest release of the module was developed and tested with [webtrees 2.1.21 and 2.2.0](https://webtrees.net/download), but should also run with any other webtrees 2.1/2.2 version.
 
 ## Translation
 The translation is based on [gettext](https://en.wikipedia.org/wiki/Gettext) and uses .po files, which can be found in [/resources/lang/](resources/lang/). You can use a local editor like [Poedit](https://poedit.net/) or [notepad++](https://notepad-plus-plus.org/) to add or modify translations.
