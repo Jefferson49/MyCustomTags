@@ -72,5 +72,5 @@ class ExtendedNameType extends NameType
 
         //Do not convert to upperstring!
         return $value;
-    }    
+    }
 }

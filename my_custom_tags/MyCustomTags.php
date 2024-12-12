@@ -74,7 +74,7 @@ class MyCustomTags extends AbstractModule implements ModuleCustomInterface
      * @return string
      *
      * @see \Fisharebest\Webtrees\Module\AbstractModule::description()
-     */    
+     */
     public function description(): string
     {
         return I18N::translate('A module to provide custom tags, types, relationship descriptors, and roles in events');
@@ -129,7 +129,7 @@ class MyCustomTags extends AbstractModule implements ModuleCustomInterface
     {
         return 'https://github.com/' . self::GITHUB_REPO;
     }
-    
+
     /**
      * {@inheritDoc}
      *
@@ -159,10 +159,10 @@ class MyCustomTags extends AbstractModule implements ModuleCustomInterface
         $elementFactory->registerTags($this->customTags());
         $elementFactory->registerSubTags($this->customSubTags());
     }
-    
+
     /**
      * Definition of custom tags and the related types, relationship descriptors, and roles in events
-     * 
+     *
      * @return array<string,ElementInterface>
      */
     protected function customTags(): array
@@ -170,7 +170,7 @@ class MyCustomTags extends AbstractModule implements ModuleCustomInterface
         return [
             //Additonal custom tags
             'INDI:BIRT:_GODP'               => new CustomElement(I18N::translate('Godparent')),
-		    'INDI:_TODO:SOUR'               => new XrefSource(I18N::translate('Source citation')),	   
+            'INDI:_TODO:SOUR'               => new XrefSource(I18N::translate('Source citation')),
             'FAM:_TODO:SOUR'                => new XrefSource(I18N::translate('Source citation')),
 
             //Additional INDI types
@@ -201,7 +201,7 @@ class MyCustomTags extends AbstractModule implements ModuleCustomInterface
             'NOTE:SOUR:EVEN:ROLE'           => new ExtendedRoleInEvent(I18N::translate('Role')),
             'OBJE:SOUR:EVEN:ROLE'           => new ExtendedRoleInEvent(I18N::translate('Role')),
             'FAM:*:_ASSO:SOUR:EVEN:ROLE'    => new ExtendedRoleInEvent(I18N::translate('Role')),
-            'INDI:*:_ASSO:SOUR:EVEN:ROLE'   => new ExtendedRoleInEvent(I18N::translate('Role')),        
+            'INDI:*:_ASSO:SOUR:EVEN:ROLE'   => new ExtendedRoleInEvent(I18N::translate('Role')),
             '_LOC:SOUR:EVEN:ROLE'           => new ExtendedRoleInEvent(I18N::translate('Role')),
             '_LOC:*:SOUR:EVEN:ROLE'         => new ExtendedRoleInEvent(I18N::translate('Role')),
         ];
@@ -209,14 +209,14 @@ class MyCustomTags extends AbstractModule implements ModuleCustomInterface
 
     /**
      * Defintion of sub tag structures
-     * 
+     *
      * @return array<string,array<int,array<int,string>>>
      */
     protected function customSubTags(): array
     {
         return [
             'INDI:BIRT'  => [['_GODP', '0:1']],
-			'INDI:_TODO' => [['SOUR',  '0:M']],
+            'INDI:_TODO' => [['SOUR',  '0:M']],
             'FAM:_TODO'  => [['SOUR',  '0:M']],
         ];
     }
