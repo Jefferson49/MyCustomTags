@@ -65,8 +65,8 @@ class ExtendedMarriageType extends MarriageType
 
             return parent::canonical($value);
         }
- 
+
         //Otherwise do not convert to upperstring!
         return $value;
-    }    
+    }
 }
