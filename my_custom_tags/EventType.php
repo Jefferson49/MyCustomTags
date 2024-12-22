@@ -50,6 +50,7 @@ class EventType extends AbstractElement
             'Jubiläum'                  => 'Jubiläum',
             'Kirchenaustritt'           => 'Kirchenaustritt',
             'Kircheneintritt'           => 'Kircheneintritt',
+            'Todeserklärung'            => 'Todeserklärung',
             'Treffen'                   => 'Treffen',
         ];
     }
