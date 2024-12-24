@@ -50,6 +50,7 @@ class FactType extends AbstractElement
             'Haftstrafe'                => 'Haftstrafe',
             'Hitlerjugend'              => 'Hitlerjugend',
             'Militärdienst'             => 'Militärdienst',
+            'Mitgliedschaft'            => 'Mitgliedschaft',
         ];
     }
 }
