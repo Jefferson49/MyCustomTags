@@ -51,6 +51,7 @@ class FactType extends AbstractElement
             'Hitlerjugend'              => 'Hitlerjugend',
             'Militärdienst'             => 'Militärdienst',
             'Mitgliedschaft'            => 'Mitgliedschaft',
+            'Sport'                     => 'Sport',
         ];
     }
 }
