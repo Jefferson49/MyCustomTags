@@ -42,11 +42,12 @@ class ExtendedNameType extends NameType
     public function values(): array
     {
         $extended_values = [
-            //Value in GEDCOM               => Value shown in webtrees frontend
-            'Deutsch'                       => 'Deutsch',
-            'Eingedeutscht'                 => 'Eingedeutscht',
-            'Name nach Heirat der Eltern'   => 'Name nach Heirat der Eltern',
-            'Ordensname'                    => 'Ordensname',
+            //Value in GEDCOM                      => Value shown in webtrees frontend
+            //
+            // Examples:
+            //''                                   => '',
+            //'Name after marriage of the parents' => 'Name after marriage of the parents',
+            //'Order name'                         => 'Order name',
         ];
 
         $values = array_merge(parent::values(), $extended_values);

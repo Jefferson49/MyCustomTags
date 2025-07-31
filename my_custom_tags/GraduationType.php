@@ -42,10 +42,12 @@ class GraduationType extends AbstractElement
     public function values(): array
     {
         return [
-            //Value in GEDCOM                  => Value shown in webtrees frontend
-            ''                                 => '',
-            'Abitur'                           => 'Abitur',
-            'Mittlere Reife'                   => 'Mittlere Reife',
+            //Value in GEDCOM       => Value shown in webtrees frontend
+            //
+            // Examples:
+            //''                    => '',
+            //'High school diploma' => 'High school diploma',
+            //'Bachelor degree'     => 'Bachelor degree',
         ];
     }
 }

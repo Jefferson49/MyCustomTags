@@ -42,10 +42,12 @@ class ConfirmationType extends AbstractElement
     public function values(): array
     {
         return [
-            //Value in GEDCOM           => Value shown in webtrees frontend
-            ''                          => '',
-            'Firmung'                   => 'Firmung',
-            'Konfirmation'              => 'Konfirmation',
+            //Value in GEDCOM             => Value shown in webtrees frontend
+            //
+            // Examples:
+            //''                          => '',
+            //'Firmung'                   => 'Firmung',
+            //'Konfirmation'              => 'Konfirmation',
         ];
     }
 }

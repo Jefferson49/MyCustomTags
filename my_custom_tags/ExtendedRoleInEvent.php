@@ -51,6 +51,12 @@ class ExtendedRoleInEvent extends RoleInEvent
             '(Officiator)'              => I18N::translate('Officiator'),
             '(Parent)'                  => I18N::translate('Parent'),
             '(Witness)'                 => I18N::translate('Witness'),
+            //
+            // Further examples:
+            //''                        => '',
+            //'Priest'                  => 'Priest',
+            //'Servant'                 => 'Servant',
+
         ];
 
         $values = array_merge(parent::values(), $extended_values);

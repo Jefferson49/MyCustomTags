@@ -42,10 +42,12 @@ class OrdinationType extends AbstractElement
     public function values(): array
     {
         return [
-            //Value in GEDCOM           => Value shown in webtrees frontend
-            ''                          => '',
-            'Priesterweihe'             => 'Priesterweihe',
-            'Primiz'                    => 'Primiz',
+            //Value in GEDCOM       => Value shown in webtrees frontend
+            //
+            // Examples:
+            //''                    => '',
+            //'Priestly ordination' => 'Priestly ordination',
+            //'First mass'          => 'First mass',
         ];
     }
 }

@@ -168,10 +168,9 @@ class MyCustomTags extends AbstractModule implements ModuleCustomInterface
     protected function customTags(): array
     {
         return [
-            //Additonal custom tags
-            'INDI:BIRT:_GODP'               => new CustomElement(I18N::translate('Godparent')),
-            'INDI:_TODO:SOUR'               => new XrefSource(I18N::translate('Source citation')),
-            'FAM:_TODO:SOUR'                => new XrefSource(I18N::translate('Source citation')),
+            //Examples for additonal custom tags:
+            //'INDI:BIRT:_GODP'             => new CustomElement(I18N::translate('Godparent')),
+            //'FAM:_TODO:SOUR'              => new XrefSource(I18N::translate('Source citation')),
 
             //Additional INDI types
             'INDI:CONF:TYPE'                => new ConfirmationType(I18N::translate('Type of confirmation')),
@@ -215,9 +214,9 @@ class MyCustomTags extends AbstractModule implements ModuleCustomInterface
     protected function customSubTags(): array
     {
         return [
-            'INDI:BIRT'  => [['_GODP', '0:1']],
-            'INDI:_TODO' => [['SOUR',  '0:M']],
-            'FAM:_TODO'  => [['SOUR',  '0:M']],
+            //Examples for additonal custom tags
+            //'INDI:BIRT'  => [['_GODP', '0:1']],
+            //'FAM:_TODO'  => [['SOUR',  '0:M']],
         ];
     }
 }

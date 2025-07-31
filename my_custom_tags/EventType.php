@@ -43,15 +43,11 @@ class EventType extends AbstractElement
     {
         return [
             //Value in GEDCOM           => Value shown in webtrees frontend
-            ''                          => '',
-            'Einweihung'                => 'Einweihung',
-            'Ehrung'                    => 'Ehrung',
-            'Gerichtsverhandlung'       => 'Gerichtsverhandlung',
-            'Jubiläum'                  => 'Jubiläum',
-            'Kirchenaustritt'           => 'Kirchenaustritt',
-            'Kircheneintritt'           => 'Kircheneintritt',
-            'Todeserklärung'            => 'Todeserklärung',
-            'Treffen'                   => 'Treffen',
+            //
+            // Examples:
+            //''                        => '',
+            //'Court hearing'           => 'Court hearing',
+            //'Inauguration'            => 'Inauguration',
         ];
     }
 }

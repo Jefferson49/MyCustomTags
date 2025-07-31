@@ -43,16 +43,11 @@ class EducationType extends AbstractElement
     {
         return [
             //Value in GEDCOM                  => Value shown in webtrees frontend
-            ''                                 => '',
-            'Berufsausbildung'                 => 'Berufsausbildung',
-            'Berufskolleg'                     => 'Berufskolleg',
-            'Berufsschule'                     => 'Berufsschule',
-            'Freiwilliges Soziales Jahr'       => 'Freiwilliges Soziales Jahr',
-            'Grundschule'                      => 'Grundschule',
-            'Gymnasium'                        => 'Gymnasium',
-            'Mittelschule'                     => 'Mittelschule',
-            'Studium'                          => 'Studium',
-            'Volksschule'                      => 'Volksschule',
+            //
+            // Examples:
+            //''                               => '',
+            //'College'                        => 'College',
+            //'High school'                    => 'High school',
         ];
     }
 }

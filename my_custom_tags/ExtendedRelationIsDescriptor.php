@@ -45,33 +45,14 @@ class ExtendedRelationIsDescriptor extends RelationIsDescriptor
     {
         $extended_values = [
             'U' => [
-                //Value in GEDCOM                              => Value shown in webtrees frontend
-                'Cousin'                                       => 'Cousin',
-                'Cousine'                                      => 'Cousine',
-                'Enkel'                                        => 'Enkel',
-                'Gläubiger'                                    => 'Gläubiger',
-                'Großmutter'                                   => 'Großmutter',
-                'Großvater'                                    => 'Großvater',
-                'Nichte'                                       => 'Nichte',
-                'Onkel'                                        => 'Onkel',
-                'Möglicherweise identische Person'             => 'Möglicherweise identische Person',
-                'Möglicherweise Schwester'                     => 'Möglicherweise Schwester',
-                'Möglicherweise Sohn'                          => 'Möglicherweise Sohn',
-                'Möglicherweise Taufpate'                      => 'Möglicherweise Taufpate',
-                'Möglicherweise Tochter'                       => 'Möglicherweise Tochter',
-                'Möglicherweise Vater'                         => 'Möglicherweise Vater',
-                'Möglicherweise verwandt mit'                  => 'Möglicherweise verwandt mit',
-                'Spekulativ: Möglicherweise identische Person' => 'Spekulativ: Möglicherweise identische Person',
-                'Spekulativ: Möglicherweise Sohn'              => 'Spekulativ: Möglicherweise Sohn',
-                'Spekulativ: Möglicherweise Vater'             => 'Spekulativ: Möglicherweise Vater',
-                'Vermutlich Bruder'                            => 'Vermutlich Bruder',
-                'Vermutlich Nachfahre von'                     => 'Vermutlich Nachfahre von',
-                'Vermutlich Schwester'                         => 'Vermutlich Schwester',
-                'Vermutlich Sohn'                              => 'Vermutlich Sohn',
-                'Vermutlich Tochter'                           => 'Vermutlich Tochter',
-                'Vermutlich Vater'                             => 'Vermutlich Vater',
-                'Vermutlich identische Person'                 => 'Vermutlich identische Person',
-                'Vermutlich verwandt mit'                      => 'Vermutlich verwandt mit',
+                //Value in GEDCOM               => Value shown in webtrees frontend
+                //
+                // Examples:
+                //''                            => '',
+                //'Cousin'                      => 'Cousin',
+                //'Presumably identical person' => 'Presumably identical person',
+                //'Suspected father'            => 'Suspected father',
+                //'Uncle'                       => 'Uncle',
             ],
         ];
 

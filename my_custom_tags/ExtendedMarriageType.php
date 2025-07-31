@@ -43,6 +43,11 @@ class ExtendedMarriageType extends MarriageType
     {
         $extended_values = [
             //Value in GEDCOM               => Value shown in webtrees frontend
+            //
+            // Examples:
+            //''                            => '',
+            //'Common-law marriage'         => 'Common-law marriage'
+            //'Interfaith marriage'         => 'Interfaith marriage'
         ];
 
         $values = array_merge(parent::values(), $extended_values);

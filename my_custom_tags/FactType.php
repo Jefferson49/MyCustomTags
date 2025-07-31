@@ -43,15 +43,11 @@ class FactType extends AbstractElement
     {
         return [
             //Value in GEDCOM           => Value shown in webtrees frontend
-            ''                          => '',
-            'Buchveröffentlichung'      => 'Buchveröffentlichung',
-            'Burschenschaft'            => 'Burschenschaft',
-            'Gefängnisaufenthalt'       => 'Gefängnisaufenthalt',
-            'Haftstrafe'                => 'Haftstrafe',
-            'Hitlerjugend'              => 'Hitlerjugend',
-            'Militärdienst'             => 'Militärdienst',
-            'Mitgliedschaft'            => 'Mitgliedschaft',
-            'Sport'                     => 'Sport',
+            //
+            // Examples:
+            //''                        => '',
+            //'Book publication'        => 'Book publication',
+            //'Prison stay'             => 'Prison stay',
         ];
     }
 }
