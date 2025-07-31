@@ -46,7 +46,7 @@ class MyCustomTags extends AbstractModule implements ModuleCustomInterface
     use ModuleCustomTrait;
 
     //Custom module version
-    public const CUSTOM_VERSION = '1.0.0';
+    public const CUSTOM_VERSION = '0.9.99';
 
     //Author
     public const CUSTOM_AUTHOR = 'Markus Hemprich';
