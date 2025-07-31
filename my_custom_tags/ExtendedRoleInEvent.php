@@ -27,6 +27,8 @@ namespace Jefferson49\Webtrees\Module\MyCustomTags;
 
 use Fisharebest\Webtrees\Elements\RoleInEvent;
 use Fisharebest\Webtrees\I18N;
+use Jefferson49\Webtrees\Internationalization\MoreI18N;
+
 
 /**
  * Additional custom roles in events (*:*:EVEN:ROLE)
@@ -44,13 +46,13 @@ class ExtendedRoleInEvent extends RoleInEvent
         $extended_values = [
             //Value in GEDCOM           => Value shown in webtrees frontend
             '(Clergy)'                  => I18N::translate('Clergy'),
-            '(Friend)'                  => I18N::translate('Friend'),
-            '(Godparent)'               => I18N::translate('Godparent'),
+            '(Friend)'                  => MoreI18N::xlate('Friend'),
+            '(Godparent)'               => MoreI18N::xlate('Godparent'),
             '(Multiple)'                => I18N::translate('Multiple'),
             '(Neighbor)'                => I18N::translate('Neighbor'),
             '(Officiator)'              => I18N::translate('Officiator'),
-            '(Parent)'                  => I18N::translate('Parent'),
-            '(Witness)'                 => I18N::translate('Witness'),
+            '(Parent)'                  => MoreI18N::xlate('Parent'),
+            '(Witness)'                 => MoreI18N::xlate('Witness'),
             //
             // Further examples:
             //''                        => '',

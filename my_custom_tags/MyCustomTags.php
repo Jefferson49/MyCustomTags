@@ -34,6 +34,8 @@ use Fisharebest\Webtrees\Module\AbstractModule;
 use Fisharebest\Webtrees\Module\ModuleCustomInterface;
 use Fisharebest\Webtrees\Module\ModuleCustomTrait;
 use Fisharebest\Webtrees\Registry;
+use Jefferson49\Webtrees\Internationalization\MoreI18N;
+
 
 /**
  * Class MyCustomTags
@@ -182,27 +184,27 @@ class MyCustomTags extends AbstractModule implements ModuleCustomInterface
             'INDI:ORDN:TYPE'                => new OrdinationType(I18N::translate('Type of ordination')),
 
             //Additional FAM types
-            'FAM:MARR:TYPE'                 => new ExtendedMarriageType(I18N::translate('Type of marriage')),
+            'FAM:MARR:TYPE'                 => new ExtendedMarriageType(MoreI18N::xlate('Type of marriage')),
             'FAM:EVEN:TYPE'                 => new EventType(I18N::translate('Type of event')),
 
             //Additional descriptors for relationships
-            'FAM:_ASSO:RELA'                => new ExtendedRelationIsDescriptor(I18N::translate('Relationship')),
-            'FAM:*:_ASSO:RELA'              => new ExtendedRelationIsDescriptor(I18N::translate('Relationship')),
-            'INDI:ASSO:RELA'                => new ExtendedRelationIsDescriptor(I18N::translate('Relationship')),
-            'INDI:*:_ASSO:RELA'             => new ExtendedRelationIsDescriptor(I18N::translate('Relationship')),
+            'FAM:_ASSO:RELA'                => new ExtendedRelationIsDescriptor(MoreI18N::xlate('Relationship')),
+            'FAM:*:_ASSO:RELA'              => new ExtendedRelationIsDescriptor(MoreI18N::xlate('Relationship')),
+            'INDI:ASSO:RELA'                => new ExtendedRelationIsDescriptor(MoreI18N::xlate('Relationship')),
+            'INDI:*:_ASSO:RELA'             => new ExtendedRelationIsDescriptor(MoreI18N::xlate('Relationship')),
 
             //Additional roles in events
-            'FAM:*:SOUR:EVEN:ROLE'          => new ExtendedRoleInEvent(I18N::translate('Role')),
-            'FAM:SOUR:EVEN:ROLE'            => new ExtendedRoleInEvent(I18N::translate('Role')),
-            'INDI:*:SOUR:EVEN:ROLE'         => new ExtendedRoleInEvent(I18N::translate('Role')),
-            'INDI:NAME:*:SOUR:EVEN:ROLE'    => new ExtendedRoleInEvent(I18N::translate('Role')),
-            'INDI:SOUR:EVEN:ROLE'           => new ExtendedRoleInEvent(I18N::translate('Role')),
-            'NOTE:SOUR:EVEN:ROLE'           => new ExtendedRoleInEvent(I18N::translate('Role')),
-            'OBJE:SOUR:EVEN:ROLE'           => new ExtendedRoleInEvent(I18N::translate('Role')),
-            'FAM:*:_ASSO:SOUR:EVEN:ROLE'    => new ExtendedRoleInEvent(I18N::translate('Role')),
-            'INDI:*:_ASSO:SOUR:EVEN:ROLE'   => new ExtendedRoleInEvent(I18N::translate('Role')),
-            '_LOC:SOUR:EVEN:ROLE'           => new ExtendedRoleInEvent(I18N::translate('Role')),
-            '_LOC:*:SOUR:EVEN:ROLE'         => new ExtendedRoleInEvent(I18N::translate('Role')),
+            'FAM:*:SOUR:EVEN:ROLE'          => new ExtendedRoleInEvent(MoreI18N::xlate('Role')),
+            'FAM:SOUR:EVEN:ROLE'            => new ExtendedRoleInEvent(MoreI18N::xlate('Role')),
+            'INDI:*:SOUR:EVEN:ROLE'         => new ExtendedRoleInEvent(MoreI18N::xlate('Role')),
+            'INDI:NAME:*:SOUR:EVEN:ROLE'    => new ExtendedRoleInEvent(MoreI18N::xlate('Role')),
+            'INDI:SOUR:EVEN:ROLE'           => new ExtendedRoleInEvent(MoreI18N::xlate('Role')),
+            'NOTE:SOUR:EVEN:ROLE'           => new ExtendedRoleInEvent(MoreI18N::xlate('Role')),
+            'OBJE:SOUR:EVEN:ROLE'           => new ExtendedRoleInEvent(MoreI18N::xlate('Role')),
+            'FAM:*:_ASSO:SOUR:EVEN:ROLE'    => new ExtendedRoleInEvent(MoreI18N::xlate('Role')),
+            'INDI:*:_ASSO:SOUR:EVEN:ROLE'   => new ExtendedRoleInEvent(MoreI18N::xlate('Role')),
+            '_LOC:SOUR:EVEN:ROLE'           => new ExtendedRoleInEvent(MoreI18N::xlate('Role')),
+            '_LOC:*:SOUR:EVEN:ROLE'         => new ExtendedRoleInEvent(MoreI18N::xlate('Role')),
         ];
     }
 
