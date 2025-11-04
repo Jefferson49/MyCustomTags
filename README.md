@@ -18,6 +18,10 @@ A [weebtrees](https://webtrees.net) 2.1/2.2 custom module to provide custom tags
 + Provide additional custom roles in events (\*:\*:EVEN:ROLE)
 
 ## Installation
++ Install and use [Custom Module Manager](https://github.com/Jefferson49/CustomModuleManager) for an easy and convenient installation of webtrees custom modules.
++ Open the Custom Module Manager view in webtrees, scroll to "MyCustomTags", and click on the "Install Module" button.
+
+**Manual installation**:
 + Download the [latest code](https://github.com/Jefferson49/MyCustomTags/releases/latest) of the module
 + Unzip and copy the folder "my_custom_tags" into the "module_v4" folder of your webtrees installation
 + **Please note that the provided module code only provides a template as a starting point for your own customization/configuration**. The provided template contains an example with a configuration used by the author
